@@ -56,6 +56,7 @@ class CafeAdapterWeb(val contexto: Context, val lista:List<WebCafe>): RecyclerVi
                 putExtra("variedad",cafe.variedad_de_cafe)
                 putExtra("notas",cafe.notas_de_cata)
             }
+        contexto.startActivity(intent)
     }
 
     class ViewHolderWeb(control: View): RecyclerView.ViewHolder(control){

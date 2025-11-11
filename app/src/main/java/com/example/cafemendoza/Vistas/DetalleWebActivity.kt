@@ -3,6 +3,7 @@ package com.example.cafemendoza.Vistas
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -50,8 +51,9 @@ class DetalleWebActivity : AppCompatActivity() {
         val notasDetalle = intent.getStringExtra("notas")
 
         //cargamos la imagen con gidle
+        Toast.makeText(this,imagenDetalle,Toast.LENGTH_SHORT).show()
         Glide.with(this)
-            .load("http://localhost/webserviceCafeMendoza/img/"+imagenDetalle)
+            .load("https://cafemendoza.grupoahost.com/img/"+imagenDetalle)
             .into(imagen)
         //mostramos los datos en los witllets
         nombre.text = nombreDetalle
