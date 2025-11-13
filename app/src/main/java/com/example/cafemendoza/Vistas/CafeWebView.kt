@@ -37,7 +37,7 @@ class CafeWebView : AppCompatActivity(), ContratoCafe.Vista {
         rcvLista = findViewById(R.id.rcvCafeWeb)
         rcvLista.layoutManager= LinearLayoutManager(this)
 
-        //configuramos retrofit
+        //configuramos retrofit //esto iria en el modelo
         val retrofit= Retrofit.Builder()
             .baseUrl("https://cafemendoza.grupoahost.com/api/")
             .addConverterFactory(GsonConverterFactory.create())

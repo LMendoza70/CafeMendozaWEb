@@ -6,6 +6,7 @@ interface ContratoCafe {
 
     interface Vista{
         fun loadData(Data: List<Cafe>)
+
     }
 
     interface Presentador{

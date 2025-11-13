@@ -51,7 +51,6 @@ class DetalleWebActivity : AppCompatActivity() {
         val notasDetalle = intent.getStringExtra("notas")
 
         //cargamos la imagen con gidle
-        Toast.makeText(this,imagenDetalle,Toast.LENGTH_SHORT).show()
         Glide.with(this)
             .load("https://cafemendoza.grupoahost.com/img/"+imagenDetalle)
             .into(imagen)

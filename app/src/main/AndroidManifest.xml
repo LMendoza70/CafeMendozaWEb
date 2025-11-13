@@ -16,10 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CafeMendoza">
         <activity
-            android:name=".Vistas.DetalleWebActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Vistas.CafeWebView"
+            android:name=".Vistas.RegistroView"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +25,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Vistas.CafeView"
+            android:name=".Vistas.DetalleWebActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vistas.CafeWebView"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".Vistas.CafeView"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
