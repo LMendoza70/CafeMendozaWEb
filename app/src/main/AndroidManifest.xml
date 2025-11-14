@@ -16,25 +16,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CafeMendoza">
         <activity
-            android:name=".Vistas.RegistroView"
+            android:name=".Vistas.loginView"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Vistas.RegistroView"
+            android:exported="true">
         </activity>
         <activity
             android:name=".Vistas.DetalleWebActivity"
             android:exported="false" />
         <activity
             android:name=".Vistas.CafeWebView"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Vistas.CafeView"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

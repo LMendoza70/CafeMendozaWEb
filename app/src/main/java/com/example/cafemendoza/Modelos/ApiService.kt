@@ -23,5 +23,12 @@ interface ApiService {
         @Field("altura_siembra")altura_siembra: Int,
         @Field("tostador_id")tostador_id: Int,
         @Field("nombre_imagen")nombre_imagen: String): Call<List<respuestaRegistro>>
+
+    @FormUrlEncoded
+    @POST("login.php")
+    fun login(
+        @Field("alias")alias: String,
+        @Field("contrasena")contrasena: String): Call<respuestaLogin>
+
 }
 

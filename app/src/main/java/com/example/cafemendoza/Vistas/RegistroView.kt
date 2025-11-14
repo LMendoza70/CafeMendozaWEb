@@ -115,7 +115,6 @@ class RegistroView : AppCompatActivity() {
                 call: Call<List<respuestaRegistro>?>,
                 response: Response<List<respuestaRegistro>?>
             ) {
-                Toast.makeText(this@RegistroView, response.message(), Toast.LENGTH_SHORT)
                 if(response.isSuccessful){
                     Toast.makeText(this@RegistroView, "Cafe registrado", Toast.LENGTH_SHORT)
                     response.body()?.let { respuestaRegistros ->
